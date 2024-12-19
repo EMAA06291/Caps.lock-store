@@ -1,0 +1,53 @@
+div.top-img {
+    position: relative;
+    border: 10px rebeccapurple;
+    height: 100vh;
+    background-image: url(../imges/4b11ee36-dc7f-4808-9914-1b6fc80ebb2f.jpg );
+    background-repeat: no-repeat;
+    background-position: fill;
+    background-size: cover;
+    opacity: 98%;
+}
+
+section.content {
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+
+    & .collection {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+
+    & .pc {
+        margin-top: 0.7rem;
+        font-weight: bold;
+    }
+
+    & .sale {
+        margin-block: 0.5rem;
+        font-weight: bold;
+    }
+
+    & .sale span {
+        color: red;
+        margin-left: 0.8rem;
+    }
+
+    & .shipping {
+        font-size: 1.5rem;
+    }
+
+    & button {
+        background-color: rgb(241, 104, 104);
+        margin-top: 0.9rem;
+        font-size: 0.9rem;
+        border-radius: 3px;
+        padding: 0.6rem 1.6rem;
+    }
+
+
+
+}

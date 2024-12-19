@@ -1,0 +1,101 @@
+* {
+margin: 0 px ;
+padding: 0 px ;
+box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system , Roboto, sans-serif;
+}
+
+.pricing-table{
+    background-color:#f5f5fa ;
+    padding: 120px;
+    }
+    .pricing-table .details {
+    width:90% ;
+    max-width:500px ;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40 px 20px ;
+    }
+.pricing-table .details h2 {
+        font-size: 30px;
+        margin-bottom:10 px ;
+        
+
+    }
+    .pricing-table .details p {
+    font-size:15 px ;
+    }
+    .pricing-table .grid {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 80px;
+padding: 20px;
+    }
+    .pricing-table .grid .box {
+        width: 500px;
+        border: 1px solid #eee;
+        text-align: center;
+        padding: 20PX;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 px 2px 10px 5px rgba(0, 0,0, 0.05);
+    
+    }
+    .pricing-table .grid .box .title{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #555;
+    }
+    .pricing-table .grid .box .price{
+margin-bottom: 20px;
+    }
+    .pricing-table .grid .box .price b {
+display: block;
+font-size: 40px;
+margin-bottom: -5px;
+    }
+    .pricing-table .grid .box .features > * {
+color: #555;
+padding : 8px 0px ;
+border-bottom: 1px solid rgb(0, 0,0, 0.2);
+    }
+.pricing-table .grid .box .button button{
+width: 100%;
+margin: 25px 0px 0px;
+padding: 10px;
+background: linear-gradient(to bottom, #3a7bd5, #3a6073);
+color: #fff;
+border-radius: 5px;
+outline:none ;
+font-weight: 600;
+cursor: pointer;
+}
+.pricing-table .grid .box.users {
+transform: scale(1.1);
+background: linear-gradient(to bottom, #3a7bd5, #3a6073);
+}
+
+.pricing-table .grid .box.users .title {
+color:  #eee;
+}
+
+.pricing-table .grid .box.users .price {
+color: #fff;
+}
+
+.pricing-table .grid .box.users .features  >* {
+color: #fff;
+border-bottom: 1px solid rgb(255,255,255,0.5);
+}
+.pricing-table .grid .box.users .button button{
+background: #fff;
+color: #3a6073;
+}
+.pricing-table .grid .box.users {
+transform: scale(1);
+}

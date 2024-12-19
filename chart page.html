@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Shop - Cart Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Roboto, sans-serif;
+      background-color: #f5f7fa;
+      color: #1e396b;
+    }
+
+    header {
+      background-color: #1e396b;
+      color: #ffffff;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 100px;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      display: none;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .table-container {
+      margin-bottom: 2rem;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .table th, .table td {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .table th {
+      background-color: #4a6fb0;
+      color: #ffffff;
+    }
+
+    .table td img {
+      height: 50px;
+    }
+
+    .coupon-section, .cart-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    .coupon-section input {
+      width: 70%;
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .btn {
+      padding: 0.7rem 1.5rem;
+      background-color: #4a6fb0;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background-color: #7dbae8;
+    }
+
+    .cart-total {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .cart-total div {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+    }
+
+    .cart-total div span {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .cart-total button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background-color: #4a6fb0;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cart-total button:hover {
+      background-color: #7dbae8;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e396b;
+      color: #ffffff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="imges/logo.png" alt="Laptop Shop Logo" class="logo">
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="table-container">
+      <h2>Shopping Cart</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Remove</th>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn">X</button></td>
+            <td><img src="imges/OIP (1).jpeg" alt="Laptop"></td>
+            <td>Gaming Laptop</td>
+            <td>$1200</td>
+            <td><input type="number" value="1" style="width: 50px;"></td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td><button class="btn">X</button></td>
+            <td><img src="imges/OIP.jpeg" alt="Laptop"></td>
+            <td>Work Laptop</td>
+            <td>$900</td>
+            <td><input type="number" value="1" style="width: 50px;"></td>
+            <td>$900</td>
+          </tr>
+          <tr>
+            <td><button class="btn">X</button></td>
+            <td><img src="imges/R.jpeg" alt="Laptop"></td>
+            <td>Ultrabook</td>
+            <td>$800</td>
+            <td><input type="number" value="1" style="width: 50px;"></td>
+            <td>$800</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-container">
+      <h2>Coupon</h2>
+      <div class="coupon-section">
+        <input type="text" placeholder="Enter your coupon code if you have one">
+        <button class="btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <h2>Cart Total</h2>
+      <div class="cart-total">
+        <div><span>Subtotal:</span> <span>$2900</span></div>
+        <div><span>Shipping Fees:</span> <span>$50</span></div>
+        <div><span>Total:</span> <span>$2950</span></div>
+      </div>
+      <a href="payment .html">
+      <button class="btn" style="width: 100%;">Proceed to Checkout</button>
+    </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Laptop Shop</p>
+  </footer>
+</body>
+</html>

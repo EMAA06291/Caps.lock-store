@@ -1,0 +1,59 @@
+:root {
+    --bodyBG: hsl(0, 0%, 0%);
+    --bodyfont: #000000;
+    --darkblue: #052747;
+    --icons: #000000;
+}
+
+
+.border {
+    border: 0px solid rgb(0, 0, 0);
+}
+
+.flex {
+
+    display: flex;
+    align-items: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;  
+      font-family: system-ui, -apple-system , Roboto, sans-serif;
+
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    width: 600px;
+    padding-left: 200px;
+
+}
+
+.fa-solid {
+    color: var(--icons)
+}
+
+
+a, button{
+    all : unset ;
+    display : inline-block;
+    transition: 0.2s;
+}
+button :active , a:active{
+    scale :0.9;
+}
+button :hover , a:hover{
+cursor: pointer;
+}

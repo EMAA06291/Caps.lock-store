@@ -1,0 +1,65 @@
+header.flex{
+    justify-content: space-between;
+    padding-inline: 10% ; 
+    padding-top: 1.2rem;
+& .links .fa-solid{
+ margin: right 0.6rem; ;
+}
+
+
+  &  sign-in{
+        margin-inline: 4rem ;
+}
+& .sign-in,
+& .register,
+& .prime , 
+& .cart ,
+& .contact,
+& .faqq
+{
+        border : 1px solid var(--bodyfont);
+        padding: 0.44rem 1.5rem;
+        border-radius: 55px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    
+    }
+& .sign-in:hover,
+& .register:hover,
+& .prime:hover,
+& .cart:hover,
+& .faqq:hover,
+& .contact:hover,
+& .sign-in:hover .fa-solid,
+& .register:hover .fa-solid,
+& .prime:hover .fa-solid,
+& .cart:hover .fa-solid ,
+& .contact:hover .fa-solid
+& .faqq:hover .fa-question-circle
+{
+    background-color: #7dbae8;
+    color: white;
+}
+&  .cart .fa-solid{
+color: dark;
+}
+& .products-number{
+    position: absolute;
+    right: -9px;
+    top: -10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: rgb(255, 90, 123);
+    height:19px;
+    width: 19px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+& .fa-keyboard{
+    font-size: 1.8rem;
+}
+
+}
